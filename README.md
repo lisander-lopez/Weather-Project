@@ -27,3 +27,5 @@ You can deploy your new React project, along with [Serverless Functions](https:/
 ```shell
 $ vercel
 ```
+
+API IM USING https://www.weatherbit.io/api/codes

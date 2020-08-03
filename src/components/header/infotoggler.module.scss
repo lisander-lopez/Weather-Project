@@ -1,0 +1,15 @@
+@import "../../variables";
+.info-btn-wrapper {
+	display: inline-block;
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: $info-btn-text-color;
+	border-radius: 100%;
+	background-color: $info-btn-bg-color;
+	box-shadow: $unit-tg-shadow;
+	cursor: pointer;
+	user-select: none;
+}

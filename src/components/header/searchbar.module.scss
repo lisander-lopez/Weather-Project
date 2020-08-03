@@ -1,0 +1,28 @@
+@import "../../variables";
+
+.search-wrapper {
+	input {
+		cursor: text;
+		height: 40px;
+		background-color: $search-box-bg-color;
+		outline: none;
+		border: none;
+		padding-left: 7%;
+		padding-right: 2%;
+		border-radius: 19px;
+		width: 75%;
+		font-size: 18px;
+		color: $search-box-main-text-color;
+		&:focus {
+			outline-offset: 0;
+		}
+	}
+}
+
+.search-icon {
+	position: relative;
+	top: 6px;
+	left: 30px;
+	color: $search-box-icon-color;
+	font-size: 20px;
+}

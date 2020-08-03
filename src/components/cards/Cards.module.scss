@@ -1,0 +1,11 @@
+section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	div {
+		text-align: center;
+		flex: 1 1 auto; /*grow | shrink | basis */
+	}
+}

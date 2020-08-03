@@ -1,0 +1,35 @@
+@import "../../variables";
+.pill {
+	position: relative;
+	height: 30px;
+	width: 15%;
+	cursor: pointer;
+}
+.farenheight {
+	left: 40px;
+}
+.celsius {
+	left: 0px;
+}
+.pill-front {
+	position: absolute;
+	top: -2px;
+	transition: all ease-in-out 0.3s;
+	background-color: $unit-tg-fore-color;
+	color: $unit-tg-text-color;
+	box-shadow: $unit-tg-shadow;
+	border-radius: 50%;
+	height: 116%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+.pill-back {
+	width: 100%;
+	height: 100%;
+	background-color: $unit-tg-back-color;
+	border-radius: 15px;
+	box-shadow: $unit-tg-shadow;
+}
