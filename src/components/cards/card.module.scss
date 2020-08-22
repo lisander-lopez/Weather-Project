@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.card {
+	background-color: $card-bg-color;
+	flex: 0 1 auto;
+	align-self: stretch;
+	text-align: center;
+	min-width: 250px;
+	padding: 10px 0;
+	margin: 5px 5px;
+	border: $card-border;
+	border-radius: 5%;
+	color: $card-text-color;
+	h2 {
+		font-size: 1em;
+	}
+}
+.card-current-temp {
+	font-size: 4em;
+}
+.seperator {
+	margin: 5px 0px;
+	height: 1px;
+	background-color: $main-bg-color;
+}

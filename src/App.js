@@ -11,9 +11,9 @@ function App() {
 	return (
 		<UnitProvider>
 			<div className={styles["main-container"]}>
-				<Header />
-				<MainCard />
-				<Cards />
+				<Header className={styles.item} />
+				<MainCard className={styles.item} />
+				<Cards className={styles.item} />
 			</div>
 		</UnitProvider>
 	);

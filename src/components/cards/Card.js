@@ -1,10 +1,25 @@
 import React from "react";
-
-function Card() {
+import styles from "./card.module.scss";
+import WeatherIcon from "../weather-icons/WeatherIcon";
+function Card(props) {
+	// console.log(state);
+	const { day, high, low, current, code, desc, delay } = props.value;
 	return (
-		<div>
-			<h1>This is a card</h1>
-		</div>
+		<section className={styles.card}>
+			<h2>{day}</h2>
+			<div className={styles.seperator} />
+			<div className="">
+				<WeatherIcon code={code} delay={props.delay} />
+			</div>
+			<div className={styles.seperator} />
+			<div className={styles["card-current-temp"]}>{current}</div>
+			<div className={styles.seperator} />
+			<div className="">{desc}</div>
+			<div className="">
+				<span>High: {high}</span>
+				<span>Low: {low}</span>
+			</div>
+		</section>
 	);
 }
 

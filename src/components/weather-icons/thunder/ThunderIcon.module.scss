@@ -1,0 +1,49 @@
+.wrapper {
+	transform: scale(0.6);
+}
+@keyframes :local(rainDrop1) {
+	0% {
+		opacity: 1;
+		transform: translate(-6, -31.501px);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+}
+@keyframes :local(rainDrop2) {
+	0% {
+		opacity: 1;
+		translate: translate(-76px, -31.501px);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-76px, 30px);
+	}
+}
+@keyframes :local(rainDrop3) {
+	0% {
+		opacity: 1;
+		transform: translate(-156px, -31.501px);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-156px, 30px);
+	}
+}
+
+.rain > path {
+	opacity: 0;
+	&:nth-of-type(1) :local {
+		transform: translate(-6, -31.501px);
+		animation: rainDrop1 (2s) ease-in-out var(--delay1) infinite normal;
+	}
+	&:nth-of-type(2) :local {
+		transform: translate(-76, -31.501px);
+		animation: rainDrop2 (2s) ease-in-out var(--delay2) infinite normal;
+	}
+	&:nth-of-type(3) :local {
+		transform: translate(-156, -31.501px);
+		animation: rainDrop3 (2s) ease-in-out var(--delay3) infinite normal;
+	}
+}

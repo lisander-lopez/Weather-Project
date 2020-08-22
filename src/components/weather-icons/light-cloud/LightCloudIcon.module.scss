@@ -1,0 +1,45 @@
+@keyframes :local(rotateRays) {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes :local(scaleRays) {
+	0% {
+		transform: translateY(0px) scale(1);
+	}
+	50% {
+		transform: translateY(-18px) scale(1.8);
+	}
+	100% {
+		transform: translateY(0px) scale(1);
+	}
+}
+
+@keyframes :local(moveCloud) {
+	0% {
+		transform: translateX(-50px);
+	}
+	100% {
+		transform: translateX(15px);
+	}
+}
+
+.ray :local {
+	animation: scaleRays 10s linear var(--delay) infinite normal;
+}
+
+.rays :local {
+	animation: rotateRays 10s linear var(--delay) infinite normal;
+	transform-origin: 30% 34%;
+}
+.cloud :local {
+	transform: translateX(-50px);
+	animation: moveCloud 10s ease-in-out var(--delay) infinite alternate;
+}

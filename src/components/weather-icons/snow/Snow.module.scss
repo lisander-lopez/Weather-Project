@@ -1,0 +1,35 @@
+.svg-wrapper {
+	order: 0;
+	flex: 0 1 100%;
+	align-self: stretch;
+
+	transform: translateY(15px);
+}
+.snow-wrapper {
+}
+
+@keyframes :local(snowDrop) {
+	0% {
+		opacity: 1;
+		transform: translateY(-30px);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+}
+.flake {
+	opacity: 0;
+	&:nth-of-type(1) :local {
+		transform: translateY(-5px);
+		animation: snowDrop (2s) ease-in-out var(--delay1) infinite normal;
+	}
+	&:nth-of-type(2) :local {
+		transform: translateY(-5px);
+		animation: snowDrop (2s) ease-in-out var(--delay2) infinite normal;
+	}
+	&:nth-of-type(3) :local {
+		transform: translateY(-5px);
+		animation: snowDrop (2s) ease-in-out var(--delay3) infinite normal;
+	}
+}

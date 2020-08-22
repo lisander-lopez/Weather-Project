@@ -1,0 +1,60 @@
+@keyframes :local(moveCloud1) {
+	0% {
+		transform: translate(36px, 74.501px) translateX(0px);
+	}
+	100% {
+		transform: translate(36px, 74.501px) translateX(100px);
+	}
+}
+
+@keyframes :local(moveCloud2) {
+	0% {
+		transform: translate(143px, 119.501px) translateX(0px);
+	}
+	100% {
+		transform: translate(143px, 119.501px) translateX(-100px);
+	}
+}
+
+.cloud1 {
+	transform: translate(36px, 74.501px);
+	animation: moveCloud1 10s ease-in-out var(--delay) infinite alternate;
+}
+
+.cloud2 {
+	transform: translate(143px, 119.501px);
+	animation: moveCloud2 10s ease-in-out var(--delay) infinite alternate;
+}
+
+@keyframes :local(rotateRays) {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes :local(scaleRays) {
+	0% {
+		transform: translateY(0px) scale(1);
+	}
+	50% {
+		transform: translateY(-18px) scale(1.8);
+	}
+	100% {
+		transform: translateY(0px) scale(1);
+	}
+}
+
+.ray :local {
+	animation: scaleRays 10s linear var(--delay) infinite normal;
+}
+
+.rays :local {
+	animation: rotateRays 10s linear var(--delay) infinite normal;
+	transform-origin: 23.5% 33.5%;
+}

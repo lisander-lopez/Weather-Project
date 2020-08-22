@@ -9,10 +9,32 @@ main {
 	text-align: center;
 }
 
+.card-wrapper {
+	color: $main-txt-color;
+	width: 50%;
+}
+
 .card-row {
 	order: 0;
 	flex: 1 1 auto;
 	align-self: auto;
+	&:nth-child(1) {
+		font-size: 2em;
+		margin: 15px 0;
+	}
+	&:nth-child(2) {
+		font-size: 1em;
+	}
+	&:nth-child(3) {
+		font-size: 4em;
+		margin: 15px 0;
+	}
+	&:nth-child(4) {
+		font-size: 1.5em;
+
+		margin: 15px 0;
+		margin-top: 0;
+	}
 }
 .middle-row {
 	display: flex;
